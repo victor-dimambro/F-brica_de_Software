@@ -12,6 +12,31 @@ body{
     --secondary-color: #004aad;   
 }
 
+.to-top{
+    background-color: var(--secondary-color);
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    bottom: 2rem;
+    right: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 /* Header */
 
 header {
@@ -90,4 +115,84 @@ main .photo{
 
 main img{
     width: 100%;
+}
+
+#before_section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#before_section .text h1{
+    width: 18rem;
+}
+
+#before_section ul{
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     padding-inline: 0;
+     font-size: 1rem;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+
+footer h1{
+    margin: 0;
+}
+
+footer button{
+    margin: 2rem 0rem 0rem;
+}
+
+footer button:hover{
+    cursor: pointer;
+}
+
+footer img{
+    width: 30%;
+}
+
+/* MODAL*/
+
+dialog{
+    border: none;
+    border-radius: 0.5rem;
+    width: 30%;
+    height: 50%;
+    box-shadow: 0 0 0.5rem rgb(0 0 0/0.3);
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+dialog h1{
+    margin-top: 0;
+}
+
+#input_div{
+    margin: 4rem 0rem 2rem;
+}
+
+#close_button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close_button:hover{
+    cursor: pointer;
+}
+
+form button:hover{
+    cursor: pointer;
 }

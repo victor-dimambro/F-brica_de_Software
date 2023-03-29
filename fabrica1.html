@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoboMeet</title>
     <link rel="stylesheet" href="./fabrica1.css"><link href="fabrica1.css">
-    <script src="/fabrica1.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f9da2f246e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body>
@@ -64,5 +64,34 @@
         </div>
     </section>
 </main>
+
+<footer>
+
+    <h1>Ready to start?</h1>
+    <button id="signup" class="sign_up_link">SIGN UP FOR FREE</button>
+    <img src="./assets/ready_to_start.png">
+
+</footer>
+
+<dialog>
+
+    <a id="close_button"><i class="fa-solid fa-xmark fa-2x"></i></a>
+    <h1>Let's start</h1>
+
+    <form>
+        <div id="input_div">
+            <p><label for="nome">Name: <input type="text" name="nome" id="name"></label></p>
+            <p><label for="email">E-mail: <input type="email" name="email" id="email"></label></p>
+        </div>
+
+        <button class="sign_up_link">SIGN UP</button>
+
+    </form>
+</dialog>
+
+
+<script src="/fabrica1.js"></script>
+
 </body>
+
 </html>
